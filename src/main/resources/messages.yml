@@ -1,0 +1,19 @@
+# Messages Configurations Below
+prefix: "&dPirates &8» &7"
+no-perm: "&cYou are not allowed to do this"
+
+# Join / Leave
+# Placeholders: %current %max %player
+join-msg: "&c%player &7has joined the game. &e%current&8/&e%max"
+leave-msg: "&c%player &7has left the game. &e%current&8/&e%max"
+
+# Timer Messages %time
+start-in: "Starting game in &e%time&es"
+game-started-pirates: "Game has begun, &dcapture &7the &aEmerald!"
+game-started-guards: "Game has begun, &bdefend &7the  &aEmerald!"
+ends-in: "Ending game in &e%time&es"
+
+# Bridge Message
+bridge-msg: "&7You must finish the row before starting a new one"
+bridge-deny: "&7You cannot walk on this bridge"
+bridge-complete: "&7You cannot walk on an &cunfinished &7bridge"

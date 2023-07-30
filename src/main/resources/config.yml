@@ -1,0 +1,18 @@
+# Game Enabled ?
+enabled: true
+
+# PLayers needed
+max-players: 10
+
+# Timers
+countdown: 10
+game: 300
+end: 10
+
+# Bridge Items
+bridge-tool: "DIAMOND_PICKAXE"
+bridge-pre-block: "GLASS"
+bridge-complete: "COAL_BLOCK"
+
+# Main World Name
+main-world: "Pirates"
