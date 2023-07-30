@@ -3,5 +3,5 @@ author: Tazsjah
 description: Pirates minigame created for PvPTime
 version: 1.0.0
 api-version: 1.18
-main: me.Tazsjah.Pirates.Pirates
+main: me.Tazsjah.Pirates
 depend: [Multiverse-Core]

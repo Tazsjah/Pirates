@@ -1,8 +1,9 @@
-package me.Tazsjah.Pirates;
+package me.Tazsjah;
 
 import me.Tazsjah.Data.Maps;
 import me.Tazsjah.Data.PlayerData;
 import me.Tazsjah.Data.Settings;
+import me.Tazsjah.Data.Sidebar;
 import me.Tazsjah.Handlers.PlayerHandler;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -28,8 +29,9 @@ public class Pirates extends JavaPlugin {
         Settings settings = new Settings();
         Maps maps = new Maps(settings);
         PlayerData data = new PlayerData(maps);
+        Sidebar bar = new Sidebar(settings);
 
-        Bukkit.getPluginManager().registerEvents(new PlayerHandler(data), this);
+        Bukkit.getPluginManager().registerEvents(new PlayerHandler(data, bar, settings), this);
 
         Bukkit.getConsoleSender().sendMessage(ChatColor.YELLOW + "Loading pirates");
     }

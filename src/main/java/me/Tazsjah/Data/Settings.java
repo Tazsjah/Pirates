@@ -13,6 +13,7 @@ public class Settings {
     private File f;
     private FileConfiguration config;
 
+    // Config Options
 
     public void loadConfig() {
         this.f = new File(Bukkit.getPluginManager().getPlugin("Pirates").getDataFolder(), "config.yml");
@@ -52,6 +53,21 @@ public class Settings {
         }
 
         return null;
+    }
+
+    // Messages Options
+
+    private File m;
+    private FileConfiguration msg;
+
+    public void loadMsg() {
+        this.m = new File(Bukkit.getPluginManager().getPlugin("Pirates").getDataFolder(), "messages.yml");
+        this.msg = YamlConfiguration.loadConfiguration(m);
+    }
+
+    public Object getMsg(String s) {
+        loadMsg();
+        return msg.get(s);
     }
 
 }

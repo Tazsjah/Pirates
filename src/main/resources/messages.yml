@@ -17,3 +17,29 @@ ends-in: "Ending game in &e%time&es"
 bridge-msg: "&7You must finish the row before starting a new one"
 bridge-deny: "&7You cannot walk on this bridge"
 bridge-complete: "&7You cannot walk on an &cunfinished &7bridge"
+
+# Scoreboard Per Case
+# Variables: $player $team $emerald $state $team $time $world $total_games $online
+scoreboard:
+  title: "&c&lPvP&4&lTime &8» &d&lPirates"
+  in-game:
+    waiting:
+      - "&r"
+      - "&7Status: &c$state"
+      - "&r&r"
+    game:
+      - "&r"
+      - "&7Status: &c$state"
+      - "&r&r"
+    end:
+      - "&r"
+      - "&7Status: &c$state"
+      - "&r&r"
+  out-game:
+    - "&r"
+    - "&7Player&8: &c$player"
+    - "&7Online&8: &c$online"
+    - "&r&r&r"
+    - "&7Games&8: &c$total_games"
+    - "&r&r"
+    - "&7play.pvptime.net"
